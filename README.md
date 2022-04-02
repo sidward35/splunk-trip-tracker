@@ -1,4 +1,4 @@
-# Trip Tracker Splunk App
+# Splunk Trip Tracker
 
 <img src="images/Trip Tracker.png"/>
 
