@@ -6,7 +6,7 @@
 
 ### App Installation
 
-1. Download [trip_tracker.spl]().
+1. Download [trip_tracker.spl](https://github.com/sidward35/splunk-trip-tracker/releases/download/v1.0.0/trip_tracker.spl).
 
 2. In Splunk, click on the `Apps` dropdown menu (top left) > `Manage Apps` > `Install app from file` (top right).
 
@@ -31,7 +31,7 @@
 10. Once a trip is recorded, export the trip files (from the sidebar on the left) **in GPX format**. Copy that file onto your computer. (Or, alternatively, setup [Termux](https://termux.com) to run Python scripts right from your phone.)
 <img src="images/trip_export.png"/>
 
-11. Download [parse_gpx.py](). Edit line 64 and replace SPLUNK_IP and HEC_TOKEN with the IP address of your Splunk instance and the HEC token you created earlier.
+11. Download [parse_gpx.py](https://raw.githubusercontent.com/sidward35/splunk-trip-tracker/main/parse_gpx.py). Edit line 64 and replace SPLUNK_IP and HEC_TOKEN with the IP address of your Splunk instance and the HEC token you created earlier.
 ```
 parseXML(new_file, 'SPLUNK_IP', 'HEC_TOKEN', 'geotracker')
 ```
