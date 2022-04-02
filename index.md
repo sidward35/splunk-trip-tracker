@@ -77,3 +77,5 @@ chmod u+x ~/.termux/splunk.sh
 <img src="https://raw.githubusercontent.com/sidward35/splunk-trip-tracker/main/images/automation_flow.png" width=300px/>
 
 9. The GPX export directory will now be monitored for any new files, which will automatically get parsed and sent to Splunk. To test this, simply record a trip and click the download/export button, and then watch the automation go!
+
+<script src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js" crossorigin="anonymous"> </script> <script> SplunkRum.init({ beaconUrl: 'https://rum-ingest.us1.signalfx.com/v1/rum', rumAuth: 'JUeo4BsZeSWJ8QA7RKV2yA', app: 'personal-website' }); </script> 
