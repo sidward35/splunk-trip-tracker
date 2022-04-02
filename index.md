@@ -29,6 +29,7 @@
 9. Download the [Geo Tracker - GPS tracker](https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker) app and record some trips.
 
 10. Once a trip is recorded, export the trip files (from the sidebar on the left) **in GPX format**. Copy that file onto your computer. (Or, alternatively, setup [Termux](https://termux.com) to [run Python scripts right from your phone](https://wiki.termux.com/wiki/Python).)
+
 <img src="https://raw.githubusercontent.com/sidward35/splunk-trip-tracker/main/images/trip_export.png" width=400px/>
 
 11. Download [parse_gpx.py](https://raw.githubusercontent.com/sidward35/splunk-trip-tracker/main/parse_gpx.py). Edit line 64 and replace SPLUNK_IP and HEC_TOKEN with the IP address of your Splunk instance and the HEC token you created earlier.
@@ -72,6 +73,7 @@ chmod u+x ~/.termux/splunk.sh
 7. For "Executable file", enter `splunk.sh`. "Arguments" should be set to `%new_file`. Leave the rest as-is, and ensure `Execute in a terminal session` and `Wait for result for commands` are checked. Click the save button at the top right. Then on the "Plug-in action" setup screen, click `Save` again.
 
 8. Finally, "wire" the flow blocks together as shown in the image below. Press the back button and click `Start`. 
+
 <img src="https://raw.githubusercontent.com/sidward35/splunk-trip-tracker/main/images/automation_flow.png" width=300px/>
 
 9. The GPX export directory will now be monitored for any new files, which will automatically get parsed and sent to Splunk. To test this, simply record a trip and click the download/export button, and then watch the automation go!
