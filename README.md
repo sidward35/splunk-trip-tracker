@@ -32,7 +32,7 @@
 <img src="images/trip_export.png"/>
 
 11. Download [parse_gpx.py](https://raw.githubusercontent.com/sidward35/splunk-trip-tracker/main/parse_gpx.py). Edit line 64 and replace SPLUNK_IP and HEC_TOKEN with the IP address of your Splunk instance and the HEC token you created earlier.
-```
+```python
 parseXML(new_file, 'SPLUNK_IP', 'HEC_TOKEN', 'geotracker')
 ```
 
